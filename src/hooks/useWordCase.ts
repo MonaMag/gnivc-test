@@ -49,18 +49,20 @@ const threeEnd: Rules = {
   "удь": ["удя", "удю", "удь", "удем", "уде"]
 };
 
-type CassesType = {
-  value: string;
-  lable: string;
+type CasesType = {
+  value: string
+  questions: string
+  label: string
+  name: string
 }
 
-const casess: CassesType[] = [
-  {value: "nominative", lable: 'Именительный'},
-  {value: "genitive", lable: 'Родительный'},
-  {value: "dative", lable: 'Дательный'},
-  {value: "accusative", lable: 'Винительный'},
-  {value: "instrumental", lable: 'Творительный'},
-  {value: "prepositional", lable: 'Предложный'},
+const cases: CasesType[] = [
+  {value: 'nominative', name: 'Именительный', questions: 'Кто? Что?', label: 'И.п.'},
+  {value: 'genitive', name: 'Родительный', questions: 'Кого? Чего?', label: 'Р.п.'},
+  {value: 'dative', name: 'Дательный', questions: 'Кому? Чему?', label: 'Д.п.'},
+  {value: 'accusative', name: 'Винительный', questions: 'Кого? Что?', label: 'В.п.'},
+  {value: 'instrumental', name: 'Творительный', questions: 'Кем? Чем?', label: 'Т.п.'},
+  {value: 'prepositional', name: 'Предложный', questions: 'О ком? О чем?', label: 'П.п.'},
 ]
 
 export const useWordCase = () => {
@@ -77,7 +79,7 @@ export const useWordCase = () => {
     if (rules[endPart] === undefined) {
       return [false, null];
     }
-    const nextEndIndex = casess.map(value => value.value).indexOf(declination);
+    const nextEndIndex = cases.map(value => value.value).indexOf(declination);
     return [true, mainPart + rules[endPart][nextEndIndex - 1]]
   }
 
@@ -96,11 +98,11 @@ export const useWordCase = () => {
     if (exists) {
       return nextValue as string;
     }
-    
+
     else {
       return value
     }
   }
 
-  return {toCase, casess}
+  return {toCase, cases}
 }

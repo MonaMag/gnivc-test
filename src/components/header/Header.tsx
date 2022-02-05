@@ -8,7 +8,7 @@ function Header() {
     console.log('HEADER')
     return (
         <div className={s.headerContainer}>
-            <NavLink to={'/form'} className={s.navLink}>
+            <NavLink to={'/form'} className={s.navLinkIcon}>
                 <div className={s.navLinkContext}>
                     <img src={HomePage} className={s.homeIcon} alt="icon"/>
                 </div>

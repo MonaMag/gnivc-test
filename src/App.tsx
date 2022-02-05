@@ -6,13 +6,14 @@ import FormContainer from "./components/form/FormContainer";
 import {Cases} from "./components/cases/Cases";
 
 
+
 function App() {
     console.log('APP')
     return (
         <div className="App">
             <Header/>
             <FormContainer/>
-            <Cases/>
+            <Cases />
             <Footer/>
             {/*<Routes>
                 <Route path={'/'} element={<FormContainer/>}/>

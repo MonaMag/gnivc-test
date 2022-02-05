@@ -1,0 +1,40 @@
+.container {
+    background-color: #e9ecef;
+    height: 600px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.caseBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.headerTable {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid darkgrey;
+    width: 80%;
+    padding: 10px;
+}
+
+.valueTable {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid darkgrey;
+    border-top: none;
+}
+
+.item {
+
+    width: 180px;
+    text-align: start;
+}

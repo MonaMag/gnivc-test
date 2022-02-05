@@ -17,14 +17,6 @@ export const Cases = () => {
         })
     };
 
-/*const question: any = {
-    'Именительный': 'Кто? Что?',
-    'Родительный': 'Кого? Чего?',
-    'Дательный': 'Кому? Чему?',
-    'Винительный': 'Кого? Что?',
-    'Творительный': 'Кем? Чем?',
-    'Предложный': 'О ком? О чем?',
-}*/
 
     const declinedWord = useSelector<AppStateType, string | null>(state => state.inflection.declinedWord);
     const name = useSelector<AppStateType, string>(state => state.inflection.name);

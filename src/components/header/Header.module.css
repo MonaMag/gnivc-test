@@ -1,10 +1,13 @@
+.headerBlock {
+
+}
 .headerContainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 55px;
+    height: 60px;
     width: 100%;
-    background-color: #6d70d3;
+    background-color: #363636;
     min-height: 55px;
     position: fixed;
     top: 0;
@@ -34,6 +37,6 @@
 }
 
 .navLinkContext:hover, .homeIcon:hover {
-    color: #0c0c0c;
+    color: #55e355;
     filter: contrast(1);
 }

@@ -67,7 +67,7 @@ function FormContainer(): JSX.Element {
 
                     <div id="case">
                         {cases.map((value, index) => (
-                                <label><input type="radio" key={value + '-' + index}
+                                <label key={value + '-' + index}><input type="radio"
                                               checked={currentDeclination === value.value}
                                               value={value.value} slot={value.questions} name={value.name}
                                               onChange={onOptionChange}

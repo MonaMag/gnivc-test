@@ -2,7 +2,7 @@ import React from 'react'
 import s from './Cases.module.css'
 
 
-function FormContainer() {
+export const Cases = () => {
     console.log("CASES")
     return (
         <div className={s.container}>
@@ -22,4 +22,4 @@ function FormContainer() {
     )
 }
 
-export default FormContainer
+

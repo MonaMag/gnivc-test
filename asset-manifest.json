@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/gnivc-test/static/css/main.f8b11dcf.css",
-    "main.js": "/gnivc-test/static/js/main.81d6872a.js",
+    "main.css": "/gnivc-test/static/css/main.82c2340c.css",
+    "main.js": "/gnivc-test/static/js/main.c5ecd8ae.js",
     "static/js/787.28cb0dcd.chunk.js": "/gnivc-test/static/js/787.28cb0dcd.chunk.js",
+    "static/media/fon7.jpg": "/gnivc-test/static/media/fon7.c74bb3ff7a87004797e6.jpg",
     "static/media/preloader.gif": "/gnivc-test/static/media/preloader.b2a8fa3d8baba9fc720f.gif",
     "index.html": "/gnivc-test/index.html",
-    "main.f8b11dcf.css.map": "/gnivc-test/static/css/main.f8b11dcf.css.map",
-    "main.81d6872a.js.map": "/gnivc-test/static/js/main.81d6872a.js.map",
+    "main.82c2340c.css.map": "/gnivc-test/static/css/main.82c2340c.css.map",
+    "main.c5ecd8ae.js.map": "/gnivc-test/static/js/main.c5ecd8ae.js.map",
     "787.28cb0dcd.chunk.js.map": "/gnivc-test/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8b11dcf.css",
-    "static/js/main.81d6872a.js"
+    "static/css/main.82c2340c.css",
+    "static/js/main.c5ecd8ae.js"
   ]
 }

@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/gnivc-test/static/css/main.0a77a704.css",
-    "main.js": "/gnivc-test/static/js/main.c903e6cc.js",
+    "main.css": "/gnivc-test/static/css/main.ba4dc7b2.css",
+    "main.js": "/gnivc-test/static/js/main.6814bf8b.js",
     "static/js/787.28cb0dcd.chunk.js": "/gnivc-test/static/js/787.28cb0dcd.chunk.js",
     "static/media/banner.png": "/gnivc-test/static/media/banner.5d77bab519c5955059da.png",
     "static/media/preloader.gif": "/gnivc-test/static/media/preloader.b2a8fa3d8baba9fc720f.gif",
     "index.html": "/gnivc-test/index.html",
-    "main.0a77a704.css.map": "/gnivc-test/static/css/main.0a77a704.css.map",
-    "main.c903e6cc.js.map": "/gnivc-test/static/js/main.c903e6cc.js.map",
+    "main.ba4dc7b2.css.map": "/gnivc-test/static/css/main.ba4dc7b2.css.map",
+    "main.6814bf8b.js.map": "/gnivc-test/static/js/main.6814bf8b.js.map",
     "787.28cb0dcd.chunk.js.map": "/gnivc-test/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a77a704.css",
-    "static/js/main.c903e6cc.js"
+    "static/css/main.ba4dc7b2.css",
+    "static/js/main.6814bf8b.js"
   ]
 }

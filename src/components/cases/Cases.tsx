@@ -8,7 +8,6 @@ import {faCopy} from '@fortawesome/free-regular-svg-icons'
 
 
 export const Cases = () => {
-    console.log("CASES")
 
     const [copiedWord, setCopiedWord] = useState<string>('');
 
@@ -17,7 +16,6 @@ export const Cases = () => {
             setCopiedWord(declinedWord);
         })
     };
-
 
     const declinedWord = useSelector<AppStateType, string>(state => state.inflection.declinedWord);
     const name = useSelector<AppStateType, string>(state => state.inflection.name);
@@ -41,11 +39,12 @@ export const Cases = () => {
 
                     {currentDeclination !== 'nominative'
                         ? <div className={s.item}>{declinedWord}
-                            {declinedWord &&
-                                <div className={s.tooltipOnHover}>
-                                    <a className={s.wordCopy} onClick={() => copyToClipboard(declinedWord)}><FontAwesomeIcon icon={faCopy} id="icon"/>
-                                    </a>
-                                </div>
+                            {declinedWord
+                            && <div className={s.tooltipOnHover}>
+                                <a className={s.wordCopy} onClick={() => copyToClipboard(declinedWord)}>
+                                    <FontAwesomeIcon icon={faCopy} id="icon"/>
+                                </a>
+                            </div>
                             }
                             <div className={s.tooltip}>Copy word</div>
                         </div>

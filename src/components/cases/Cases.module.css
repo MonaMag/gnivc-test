@@ -1,6 +1,4 @@
 .container {
-    background-color: #e9ecef;
-    height: 500px;
     margin-top: 30px;
     width: 100%;
     padding-top: 60px;
@@ -12,6 +10,20 @@
     grid-template-rows: 1fr 1fr;
     width: 80%;
     margin: 0 auto;
+}
+
+.container::after {
+    content: "";
+    background-image: url('../../assets/img/fon7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .headerTable {
@@ -45,8 +57,9 @@
 .wordCopy {
     margin-left: 15px;
 }
+
 .wordCopy:hover {
-   color: #bd5753;
+    color: rgb(33, 126, 74);
 }
 
 .tooltip {
@@ -54,11 +67,11 @@
     visibility: hidden;
     margin-left: 8px;
     font-size: 11px;
-    color: #bd5753;
+    color: rgb(33, 126, 74);
     padding: 4px;
     opacity: 0.6;
 }
 
-.tooltipOnHover:hover + .tooltip{
+.tooltipOnHover:hover + .tooltip {
     visibility: visible;
 }

@@ -21,12 +21,6 @@ function App() {
                 <FormContainer/>
                 <Cases/>
                 <Footer/>
-                {/*<Routes>
-                <Route path={'/'} element={<FormContainer/>}/>
-                <Route path={'/formContainer'} element={<FormContainer/>}/>
-                <Route path={'/404'} element={<h1>404: PAGE NOT FOUND</h1>}/>
-                <Route path={'*'} element={<Navigate to={'/404'}/>}/>
-            </Routes>*/}
             </div>
         </div>
     );

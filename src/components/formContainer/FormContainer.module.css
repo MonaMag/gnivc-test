@@ -44,7 +44,6 @@
     justify-content: space-between;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-
 .inputGroupControl {
     border-radius: 4px;
     width: 100%;
@@ -62,7 +61,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     font-size: 14px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
@@ -77,12 +76,15 @@
     margin-right: 30px;
     white-space: nowrap;
 }
-
+.radioGroupControlWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .radioGroupControl {
     display: flex;
     border-radius: 4px;
     padding: 2px 5px;
-    margin: 0 5px;
 }
 
 .buttonBlock {
@@ -111,21 +113,16 @@
 }
 
 @media screen and (max-width: 700px) {
-    .inputGroup, .radioGroup, .buttonBlock {
-        width: 100%;
-        flex-wrap: wrap;
+    .inputGroup {
         padding-top: 10px;
+        flex-wrap: wrap;
     }
-
     .inputGroupControl {
         height: 30px;
     }
-
-    .formWithImg {
-        flex-wrap: wrap;
-        width: 100%;
+    .explanation {
+        text-align: center;
     }
-
     .formImg {
         width: 100%;
     }

@@ -27,45 +27,40 @@ export const Form = ({
     return (
         <div className={s.formContainer}>
             <div className={s.formBlock}>
+                <div className={s.formImg}>
+                </div>
                 <div className={s.explanation}>
-                    <p>Слово должно быть в именительном падеже единственного числа.</p>
+                    <span>Слово должно быть в именительном падеже единственного числа.</span>
                 </div>
-                <div className={s.formWithImg}>
-                    <div>
-                        <div className={s.inputGroup}>
-                            <div className={s.groupTitle}>Введите слово:</div>
-                            <input className={s.inputGroupControl} type="text" value={word} onChange={onInputChange}
-                                   autoFocus/>
-                        </div>
 
-                        <div className={s.radioGroup}>
-                            <div className={s.groupTitle}>Выберите падеж:
-                            </div>
-                            {cases.map((value, index) => (
-                                <div className={s.radioGroupControl} key={value + '-' + index}>
-                                    <label>
-                                        <input type="radio"
-                                               checked={currentDeclination === value.value}
-                                               value={value.value} slot={value.questions}
-                                               name={value.name}
-                                               onChange={onOptionChange}
-                                               onKeyPress={onPressEnter}
-                                               className={s.radioGroupControlItem}
-                                        />{value.label}</label>
-                                </div>
-                            ))}
-                        </div>
-
-                        <input type="button" className={s.btn} value="Просклонять"
-                               onClick={() => getInflectedWord(word, currentDeclination, currentQuestions)
-                               }/>
-                    </div>
-
-                    <div className={s.formImg}>
-
-                    </div>
-
+                <div className={s.inputGroup}>
+                    <div className={s.groupTitle}>Введите слово:</div>
+                    <input className={s.inputGroupControl} type="text" value={word} onChange={onInputChange}
+                           autoFocus/>
                 </div>
+
+                <div className={s.radioGroup}>
+                    <div className={s.groupTitle}>Выберите падеж:
+                    </div>
+                    {cases.map((value, index) => (
+                        <div className={s.radioGroupControl} key={value + '-' + index}>
+                            <label>
+                                <input type="radio"
+                                       checked={currentDeclination === value.value}
+                                       value={value.value} slot={value.questions}
+                                       name={value.name}
+                                       onChange={onOptionChange}
+                                       onKeyPress={onPressEnter}
+                                       className={s.radioGroupControlItem}
+                                />{value.label}</label>
+                        </div>
+                    ))}
+                </div>
+
+                <input type="button" className={s.btn} value="Просклонять"
+                       onClick={() => getInflectedWord(word, currentDeclination, currentQuestions)
+                       }/>
+
             </div>
         </div>
     )

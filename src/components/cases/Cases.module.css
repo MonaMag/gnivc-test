@@ -12,7 +12,7 @@
     margin: 0 auto;
 }
 
-.container::after {
+/*.container::after {
     content: "";
     background-image: url('../../assets/img/fon7.jpg');
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
     right: 0;
     position: absolute;
     z-index: -1;
-}
+}*/
 
 .headerTable {
     display: grid;
@@ -59,7 +59,7 @@
 }
 
 .wordCopy:hover {
-    color: rgb(33, 126, 74);
+    color: #a94442;
 }
 
 .tooltip {
@@ -67,7 +67,7 @@
     visibility: hidden;
     margin-left: 8px;
     font-size: 11px;
-    color: rgb(33, 126, 74);
+    color: #a94442;
     padding: 4px;
     opacity: 0.6;
 }

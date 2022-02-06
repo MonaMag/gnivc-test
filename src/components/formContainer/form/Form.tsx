@@ -29,14 +29,14 @@ export const Form = ({
             <div className={s.formBlock}>
                 <div className={s.formImg}>
                 </div>
-                <div className={s.explanation}>
-                    <span>Слово должно быть в именительном падеже единственного числа.</span>
-                </div>
 
                 <div className={s.inputGroup}>
                     <div className={s.groupTitle}>Введите слово:</div>
                     <input className={s.inputGroupControl} type="text" value={word} onChange={onInputChange}
                            autoFocus/>
+                </div>
+                <div className={s.explanation}>
+                    <span>Слово должно быть в именительном падеже единственного числа.</span>
                 </div>
 
                 <div className={s.radioGroup}>

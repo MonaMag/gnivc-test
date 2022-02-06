@@ -24,31 +24,34 @@ export const Cases = () => {
 
 
     return (
-        <div className={s.container}>
-            <div className={s.caseBlock}>
+        <div className={s.caseWrapper}>
+            <div className={s.container}>
+                <div className={s.caseBlock}>
 
-                <div className={s.headerTable}>
-                    <div className={s.item}>Падеж</div>
-                    <div className={s.item}>Вопрос</div>
-                    <div className={s.item}>Склонение</div>
-                </div>
+                    <div className={s.headerTable}>
+                        <div className={s.item}>Падеж</div>
+                        <div className={s.item}>Вопрос</div>
+                        <div className={s.item}>Склонение</div>
+                    </div>
 
-                <div className={s.valueTable}>
-                    <div className={s.item}>{name}</div>
-                    <div className={s.item}>{currentQuestions}</div>
+                    <div className={s.valueTable}>
+                        <div className={s.item}>{name}</div>
+                        <div className={s.item}>{currentQuestions}</div>
 
-                    {currentDeclination !== 'nominative'
-                        ? <div className={s.item}>{declinedWord}
-                            {declinedWord
-                            && <div className={s.tooltipOnHover}>
-                                <a className={s.wordCopy} onClick={() => copyToClipboard(declinedWord)}>
-                                    <FontAwesomeIcon icon={faCopy} id="icon"/>
-                                </a>
+                        {currentDeclination !== 'nominative'
+                            ? <div className={s.item}>{declinedWord}
+                                {declinedWord
+                                && <div className={s.tooltipOnHover}>
+                                    <a className={s.wordCopy} onClick={() => copyToClipboard(declinedWord)}>
+                                        <FontAwesomeIcon icon={faCopy} id="icon"/>
+                                    </a>
+                                </div>
+                                }
+                                <div className={s.tooltip}>Copy word</div>
                             </div>
-                            }
-                            <div className={s.tooltip}>Copy word</div>
-                        </div>
-                        : ''}
+                            : ''}
+                    </div>
+                    {/* <div className={s.caseImg}></div>*/}
                 </div>
             </div>
         </div>

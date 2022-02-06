@@ -39,10 +39,17 @@ export const Cases = () => {
                     <div className={s.item}>{name}</div>
                     <div className={s.item}>{currentQuestions}</div>
 
-                    {currentDeclination !== 'nominative' ? <div className={s.item}>{declinedWord}
-                        {declinedWord && <a className={s.wordCopy} onClick={() => copyToClipboard(declinedWord)}><FontAwesomeIcon
-                            icon={faCopy}/></a>}
-                    </div> : ''}
+                    {currentDeclination !== 'nominative'
+                        ? <div className={s.item}>{declinedWord}
+                            {declinedWord &&
+                                <div className={s.tooltipOnHover}>
+                                    <a className={s.wordCopy} onClick={() => copyToClipboard(declinedWord)}><FontAwesomeIcon icon={faCopy} id="icon"/>
+                                    </a>
+                                </div>
+                            }
+                            <div className={s.tooltip}>Copy word</div>
+                        </div>
+                        : ''}
                 </div>
             </div>
         </div>

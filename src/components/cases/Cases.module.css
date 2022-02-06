@@ -39,8 +39,26 @@
 
 .item {
     margin-left: 10px;
+    display: flex;
 }
 
 .wordCopy {
     margin-left: 15px;
+}
+.wordCopy:hover {
+   color: #bd5753;
+}
+
+.tooltip {
+    background-color: rgba(242, 222, 222, 0.63);
+    visibility: hidden;
+    margin-left: 8px;
+    font-size: 11px;
+    color: #bd5753;
+    padding: 4px;
+    opacity: 0.6;
+}
+
+.tooltipOnHover:hover + .tooltip{
+    visibility: visible;
 }

@@ -1,9 +1,10 @@
 .container {
     background-color: #e9ecef;
-    height: 700px;
+    height: 500px;
     margin-top: 30px;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 60px;
+    font-size: 14px;
 }
 
 .caseBlock {
@@ -17,12 +18,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: start;
-    align-content: center;
+    align-items: center;
     border: 1px solid darkgrey;
     font-weight: 500;
     flex-wrap: wrap;
     padding: 10px;
     text-align: start;
+    background-color: rgba(205, 212, 209, 0.7);
 }
 
 .valueTable {
@@ -32,11 +34,13 @@
     border-top: none;
     padding: 10px;
     text-align: start;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .item {
     margin-left: 10px;
 }
-.caseBlockBtn {
-margin-left: 5px;
+
+.wordCopy {
+    margin-left: 15px;
 }

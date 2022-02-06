@@ -4,7 +4,7 @@ const initialState = {
     word: '',
     name: 'Именительный',
     declination: 'nominative' as DeclinationType,
-    declinedWord: '' as string | null,
+    declinedWord: '' as string,
     questions: 'Кто? Что?' as QuestionsType,
 };
 

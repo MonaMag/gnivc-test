@@ -49,7 +49,7 @@ const threeEnd: Rules = {
   "удь": ["удя", "удю", "удь", "удем", "уде"]
 };
 
-type CasesType = {
+export type CasesType = {
   value: string
   questions: string
   label: string

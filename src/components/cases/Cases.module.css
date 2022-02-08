@@ -2,6 +2,7 @@
     width: 100%;
     height: 500px;
     background-color: #d8ecef;
+    margin: 0 auto;
 }
 .container {
     margin-top: 30px;
@@ -82,4 +83,11 @@
 
 .tooltipOnHover:hover + .tooltip {
     visibility: visible;
+}
+
+
+@media screen and (min-width: 1200px)  {
+    .caseWrapper {
+        max-width: 1320px;
+    }
 }

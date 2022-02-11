@@ -21,6 +21,7 @@
     background-image: url('../../assets/img/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 .explanation {
@@ -35,9 +36,11 @@
     width: 100%;
     padding: 5px 0;
 }
+
 .explanation span {
     margin: 5px;
 }
+
 .inputGroup {
     width: 100%;
     margin-bottom: 15px;
@@ -45,6 +48,7 @@
     justify-content: space-between;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
+
 .inputGroupControl {
     border-radius: 4px;
     width: 100%;
@@ -54,9 +58,11 @@
     border: 1px solid #108376;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
+
 .inputGroupControl:focus {
     border: 1px solid #fa8d68;
 }
+
 .radioGroup {
     width: 100%;
     display: flex;
@@ -77,15 +83,24 @@
     margin-right: 30px;
     white-space: nowrap;
 }
+
 .radioGroupControlWrapper {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+
 .radioGroupControl {
     display: flex;
     border-radius: 4px;
     padding: 2px 5px;
+}
+.radioGroupControlItem {
+    color: coral;
+    cursor: pointer;
+}
+.radioGroupControlItem:hover {
+    color: #fe783c;
 }
 
 .buttonBlock {
@@ -109,21 +124,27 @@
 }
 
 .btn:hover {
-    background-color: #fe783c;
-   border: 1px solid #fd9e7c;
+    background-color: rgba(6, 90, 81, 0.9);
+    border: 1px solid #108376;
 }
-
+.btn:active {
+    background-color: #fe783c;
+    border: 1px solid #fd9e7c;
+}
 @media screen and (max-width: 900px) {
     .inputGroup {
         padding-top: 10px;
         flex-wrap: wrap;
     }
+
     .inputGroupControl {
         height: 30px;
     }
+
     .explanation {
         text-align: center;
     }
+
     .formImg {
         width: 100%;
     }

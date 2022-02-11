@@ -7,7 +7,7 @@ import {faGithub} from '@fortawesome/free-brands-svg-icons'
 import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 
 export const Footer = () => {
-
+    console.log('Footer')
     return (
         <div className={s.footerBlock}>
             <div className={s.footerContainer}>
@@ -18,7 +18,7 @@ export const Footer = () => {
                     <a href="http://linkedin.com/in/manarsha-magomedova-21372283">
                         <FontAwesomeIcon icon={faLinkedinIn}/></a>
                 </div>
-                <div className={s.copyright}>@ 2021 | mona | All rights reserved</div>
+                <div className={s.copyright}>@ 2022 | mona | All rights reserved</div>
             </div>
         </div>
     )

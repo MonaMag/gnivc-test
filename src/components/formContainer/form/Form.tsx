@@ -1,15 +1,15 @@
-import React, {ChangeEvent} from 'react'
+import React, {ChangeEvent, useCallback} from 'react'
 import s from '../FormContainer.module.css'
 import {CasesType} from "../../../hooks/useWordCase";
 import {DeclinationType, QuestionsType} from "../../../redux/types/inflectionType";
+import {setDeclination, setName, setQuestions, setWord} from "../../../redux/inflection-reducer";
+import {useDispatch} from "react-redux";
 
 export type FormPropsType = {
     cases: CasesType[]
     word: string
     currentQuestions: QuestionsType
     currentDeclination: DeclinationType
-    onInputChange: (e: ChangeEvent<HTMLInputElement>) => void
-    onOptionChange: (e: ChangeEvent<HTMLInputElement>) => void
     onPressEnter: (e: React.KeyboardEvent<HTMLInputElement>) => void
     getInflectedWord: (value: string, declination: DeclinationType, currentQuestions: QuestionsType) => void
 }
@@ -18,11 +18,23 @@ export const Form = ({
                          word,
                          currentDeclination,
                          currentQuestions,
-                         onInputChange,
-                         onOptionChange,
                          onPressEnter,
                          getInflectedWord
                      }: FormPropsType) => {
+    console.log('Form')
+    const dispatch = useDispatch();
+
+
+    const onInputChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+        dispatch(setWord(e.currentTarget.value))
+        console.log(e.currentTarget.value)
+    }, [dispatch])
+
+    const onOptionChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+        dispatch(setDeclination(e.currentTarget.value as DeclinationType))
+        dispatch(setQuestions(e.currentTarget.slot as QuestionsType))
+        dispatch(setName(e.currentTarget.name as string))
+    }, [dispatch])
 
     return (
         <div className={s.formContainer}>
@@ -63,7 +75,6 @@ export const Form = ({
                 <input type="button" className={s.btn} value="Просклонять"
                        onClick={() => getInflectedWord(word, currentDeclination, currentQuestions)
                        }/>
-
             </div>
         </div>
     )

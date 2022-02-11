@@ -11,7 +11,7 @@ import {Preloader} from "./common/preloader/Preloader";
 
 
 function App() {
-
+    console.log('APP')
     const status = useSelector<AppStateType, RequestStatusType>(state => state.app.status)
     return (
         <div className="App">

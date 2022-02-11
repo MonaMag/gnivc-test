@@ -9,6 +9,7 @@ import {DeclinationType, QuestionsType} from "../../redux/types/inflectionType";
 
 
 function Header() {
+    console.log('Header')
     const dispatch = useDispatch();
 
     const goHomePageHandler = () => {

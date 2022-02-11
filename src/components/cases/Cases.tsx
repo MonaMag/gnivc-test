@@ -8,7 +8,7 @@ import {faCopy} from '@fortawesome/free-regular-svg-icons'
 
 
 export const Cases = () => {
-
+    console.log('Cases')
     const [copiedWord, setCopiedWord] = useState<string>('');
 
     const copyToClipboard = (declinedWord: string): void => {
